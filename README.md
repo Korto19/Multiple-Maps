@@ -22,7 +22,7 @@ E' disponibile nel repository ufficiale di QGIS.
 ### Finestra processing
 Il plugin, una volta caricato, compare negli script di processing nella cartella HTML
 
-![uno](images/processing.PNG)
+![uno](images/Processing.PNG)
 
 Il plugin permette la composizione di un layot di pagina HTML con i layer da una fonte tra quelle compatibili.
 
