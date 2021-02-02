@@ -80,7 +80,7 @@ E' anche possibile applicare un atlante contemporaneamente su tutte o parte dell
 ↑[torna su](#multiple-map)↑
 
 ### Videotutorial
-![](https://img.youtube.com/vi/reoXJ7Pmk-I/0.jpg)](https://youtu.be/reoXJ7Pmk-I "HML with CSS generator")
+[![](https://img.youtube.com/vi/reoXJ7Pmk-I/0.jpg)](https:// "HML with CSS generator")
 
 ↑[torna su](#multiple-map)↑
 
