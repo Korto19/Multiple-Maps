@@ -22,11 +22,11 @@ E' disponibile nel repository ufficiale di QGIS.
 ### Finestra processing
 Il plugin, una volta caricato, compare negli script di processing nella cartella HTML
 
-![uno](images/processing.png)
+![uno](images/processing.PNG)
 
 Il plugin permette la composizione di un layot di pagina HTML con i layer da una fonte tra quelle compatibili.
 
-![uno](images/Finestra_annotata.png)
+![uno](images/Finestra_annotata.PNG)
 
 1. [opzionale]Titolo che compare in testata del layout;
 2. [opzionale]Sottotitolo;
@@ -75,7 +75,7 @@ E' anche possibile applicare un atlante contemporaneamente su tutte o parte dell
 
 #### Layout d'esempio
 
-![uno](images/Esempio.png)
+![uno](images/Esempio.PNG)
 
 ↑[torna su](#multiple-map)↑
 
