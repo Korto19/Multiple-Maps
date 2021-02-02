@@ -1,0 +1,51 @@
+# This file contains metadata for your plugin.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=MultiMapLayout
+qgisMinimumVersion=3.6
+description=MultiMapLayout
+version=0.1
+author=Giulio Fattori
+email=giulio.fattori@tin.it
+
+about=Compose a multiple map layout from project layers in one page
+      leave the overlay and background layers visible and select in the plugin those with which you want to create the layout
+      
+      Produce un layout di stampa a mappe multiple
+      lasciate accesi i layer di sovrimpressione e quelli di sfondo e selezionate nel plugin quelli di cui si vuole la rappresentazione
+
+tracker=https://github.com/Korto19/Multi_Map_Layout/issues
+repository=https://github.com/Korto19/Multi_Map_Layout
+# End of mandatory metadata
+
+# Recommended items:
+
+hasProcessingProvider=yes
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=composer, layer, layout, map, python
+
+homepage=https://github.com/Korto19/Multi_Map_Layout#
+category=Processing, script
+icon=icon.svg
+# experimental flag
+experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
+# Since QGIS 3.8, a comma separated list of plugins to be installed
+# (or upgraded) can be specified.
+# Check the documentation for more information.
+# plugin_dependencies=
+
+Category of the plugin: Raster, Vector, Database or Web
+# category= Raster, Vector, Database, Composer, Layout
+
+# If the plugin can run on QGIS Server.
+server=False
+
