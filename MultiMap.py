@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 """
 /***************************************************************************
  MultiMap
@@ -19,21 +20,41 @@
  *   (at your option) any later version.                                   *
  *                                                                         *
  ***************************************************************************/
- This script initializes the plugin, making it known to QGIS.
 """
 
 __author__ = 'giulio.fattori'
 __date__ = '2021-02-03'
 __copyright__ = '(C) 2021 by giulio.fattori'
 
+# This will get replaced with a git SHA1 when you do a git archive
 
-# noinspection PyPep8Naming
-def classFactory(iface):  # pylint: disable=invalid-name
-    """Load MultiMap class from file MultiMap.
+__revision__ = '$Format:%H$'
 
-    :param iface: A QGIS interface instance.
-    :type iface: QgsInterface
-    """
-    #
-    from .MultiMap import MultiMapPlugin
-    return MultiMapPlugin()
+import os
+import sys
+import inspect
+
+from qgis.core import QgsProcessingAlgorithm, QgsApplication
+from .MultiMap_provider import MultiMapProvider
+
+cmd_folder = os.path.split(inspect.getfile(inspect.currentframe()))[0]
+
+if cmd_folder not in sys.path:
+    sys.path.insert(0, cmd_folder)
+
+
+class MultiMapPlugin(object):
+
+    def __init__(self):
+        self.provider = None
+
+    def initProcessing(self):
+        """Init Processing provider for QGIS >= 3.8."""
+        self.provider = MultiMapProvider()
+        QgsApplication.processingRegistry().addProvider(self.provider)
+
+    def initGui(self):
+        self.initProcessing()
+
+    def unload(self):
+        QgsApplication.processingRegistry().removeProvider(self.provider)

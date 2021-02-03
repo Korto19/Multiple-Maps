@@ -78,7 +78,7 @@ NOTA BENE:
 
 NOTA BENE: 
 
-* Ogni mappa avrà per titolo il nome del layer o dell'elemento corrispondente.
+* Ogni mappa avrà per titolo il nome del layer o dell'elemento corrispondente
 
 * Ogni mappa può avere un sottotitolo in comune con le altre
 
@@ -86,22 +86,24 @@ NOTA BENE:
 
  `format_number(aggregate(layer:='comuni',aggregate:='sum',expression:="shape_area")/1000,2) || ' Ha' `
 
-questo a condizione che le mappe rappresentate abbiano i campi richiesti.
+questo a condizione che le mappe rappresentate abbiano i campi richiesti
 
-* L'estensione può essere scelta tra quelle dei layer disponibili, utilizzare quella della vista in essere o tracciata sul canvas.
+* L'estensione può essere scelta tra quelle dei layer disponibili, utilizzare quella della vista in essere o tracciata sul canvas
 
-* I campi selezionati possono essere riordinati a piacimento.
+* I campi selezionati possono essere riordinati a piacimento
 
 * E' possibile scegliere formato carta ed orientamento
 
-* E' possibile salvare uno qualsiasi dei formati grafici previsti.
+* E' possibile salvare uno qualsiasi dei formati grafici previsti
 
-* Con layer con nomi duplicati la composizione potrebbe non riuscire, tipico caso layer memorizzati in gpgk provenienti da risultati processing.
+* Con layer con nomi duplicati la composizione potrebbe non riuscire, tipico caso layer memorizzati in gpgk provenienti da risultati processing
 
 * **TUTTI I LAYER DEVONO AVERE LO STESSO SR** dato che per costruzione devono risultare sovrapposti
+  
+* Geometrie errate possono dare luogo a errori
 
 * Il nome del layout prodotto sarà del tipo MultiMap_Landscape_A + il formato o
- MultiMAp_Portrait_A + il formato. Ad esempio MultiMap_Landscape_A3 se si è impostato come formato carta l'A3.
+ MultiMAp_Portrait_A + il formato. Ad esempio MultiMap_Landscape_A3 se si è impostato come formato carta l'A3
 
 ↑[torna su](#multiple-map)↑
 
