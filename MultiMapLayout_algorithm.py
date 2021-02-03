@@ -106,7 +106,7 @@ class MultiMapLayoutAlgorithm(QgsProcessingAlgorithm):
         return QCoreApplication.translate('Processing', string)
 
     def createInstance(self):
-        return ComposerMultiMapProcessingAlgorithm()
+        return MultiMapLayoutProcessingAlgorithm()
 
     def name(self):
         """
@@ -128,7 +128,7 @@ class MultiMapLayoutAlgorithm(QgsProcessingAlgorithm):
     #icona dell'algoritmo di processing
     def icon(self):
         cmd_folder = os.path.split(inspect.getfile(inspect.currentframe()))[0]
-        icon = QIcon(os.path.join(os.path.join(cmd_folder, 'multimap.svg')))
+        icon = QIcon(os.path.join(os.path.join(cmd_folder, 'icon.svg')))
         return icon
     
     def group(self):
@@ -530,7 +530,7 @@ class MultiMapLayoutAlgorithm(QgsProcessingAlgorithm):
         return icon
         
     def createInstance(self):
-        return GeoLegendAlgorithm()
+        return MultiMapLayoutAlgorithm()
 
     def name(self):
         """
@@ -540,14 +540,14 @@ class MultiMapLayoutAlgorithm(QgsProcessingAlgorithm):
         lowercase alphanumeric characters only and no spaces or other
         formatting characters.
         """
-        return 'Multi Map Layout'
+        return 'Multi Map Layout from layers'
 
     def displayName(self):
         """
         Returns the translated algorithm name, which should be used for any
         user-visible display of the algorithm name.
         """
-        return self.tr('Multi Map Layout')
+        return self.tr('Multi Map Layout from layers')
 
     def group(self):
         """

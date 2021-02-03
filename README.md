@@ -1,7 +1,7 @@
 # Multiple Map
 ## QGIS Plugin per processing
 
-Multiple map from layers to one layout
+Mappe multiple da elementi o layer su singolo layout
 <!-- TOC -->
 
 - [Multiple Map](#multiple-map)
