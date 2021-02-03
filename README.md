@@ -20,7 +20,8 @@ Mappe multiple da elementi o layer su singolo layout
 <!-- /TOC -->
 
 ### Installazione
-Per installarlo basta che scarichiate lo zip del repo e da QGIS fate installa plugin da zip. 
+Per installarlo basta che scarichiate lo zip del repo e da QGIS fate installa plugin da zip.
+
 A breve disponibile nel repository ufficiale di QGIS.
 
 ### Finestra processing
