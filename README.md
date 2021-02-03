@@ -8,13 +8,14 @@ Mappe multiple da elementi o layer su singolo layout
   - [QGIS Plugin per processing](#qgis-plugin-per-processing)
     - [Installazione](#installazione)
     - [Finestra processing](#finestra-processing)
-    - [MULTI MAP LAYOUT FROM FEATURES](#multi-map-layout-from-features)
-    - [MULTI MAP LAYOUT FROM LAYERS](#multi-map-layout-from-layers)
-    - [Modifiche ai layout prodotti](#modifiche-ai-layout-prodotti)
-      - [Multimap da layer d'esempio](#multimap-da-layer-desempio)
-      - [Multimap da elementi d'esempio](#multimap-da-elementi-desempio)
-    - [Videotutorial](#videotutorial)
-    - [Ringraziamenti](#ringraziamenti)
+  - [MULTI MAP LAYOUT FROM FEATURES](#multi-map-layout-from-features)
+  - [MULTI MAP LAYOUT FROM LAYERS](#multi-map-layout-from-layers)
+  - [Modifiche ai layout prodotti](#modifiche-ai-layout-prodotti)
+  - [Esempi](#esempi)
+      - [Multimap da layer](#multimap-da-layer)
+      - [Multimap da elementi](#multimap-da-elementi)
+  - [Videotutorial](#videotutorial)
+  - [Ringraziamenti](#ringraziamenti)
 
 <!-- /TOC -->
 
@@ -29,7 +30,7 @@ Il plugin, una volta caricato, compare negli script di processing nella cartella
 
 Il plugin permette la composizione di un layout di pagina con i layer o gli elementi da una fonte tra quelle compatibili.
 
-### MULTI MAP LAYOUT FROM FEATURES
+## MULTI MAP LAYOUT FROM FEATURES
 
 ![uno](images/MMfeatures_annotata.PNG)
 
@@ -50,17 +51,18 @@ NOTA BENE:
 * Ogni mappa può avere un sottotitolo dato da un campo o una espressione
   
 * Le mappe inserite ereditano la stessa visibilità del progetto
-  
-NOTA BENE:
 
- per poter utilizzare i filtri con `'Solo elementi selezionati'` è necessario prima impostare i filtri e solo dopo spuntare `'Solo elementi selezionati'`
+* Per poter utilizzare i filtri con `'Solo elementi selezionati'` è necessario prima impostare i filtri e solo dopo spuntare `'Solo elementi selezionati'`
+
+* Il nome del layout prodotto sarà del tipo MultiFeat_Landscape_A + il formato o
+ MultiFeat_Portrait_A + il formato. Ad esempio MultiFeat_Landscape_A3 se si è impostato come formato carta l'A3.
 
 `
 ↑[torna su](#multiple-map)↑
 
 
 
-### MULTI MAP LAYOUT FROM LAYERS
+## MULTI MAP LAYOUT FROM LAYERS
 
 ![uno](images/MMlayers_annotata.PNG)
 
@@ -97,14 +99,13 @@ questo a condizione che le mappe rappresentate abbiano i campi richiesti.
 * Con layer con nomi duplicati la composizione potrebbe non riuscire, tipico caso layer memorizzati in gpgk provenienti da risultati processing.
 
 * **TUTTI I LAYER DEVONO AVERE LO STESSO SR** dato che per costruzione devono risultare sovrapposti
-  
-* E' possibile applicare un atlante a tutte le mappe o a parte di esse
 
-
+* Il nome del layout prodotto sarà del tipo MultiMap_Landscape_A + il formato o
+ MultiMAp_Portrait_A + il formato. Ad esempio MultiMap_Landscape_A3 se si è impostato come formato carta l'A3.
 
 ↑[torna su](#multiple-map)↑
 
-### Modifiche ai layout prodotti
+## Modifiche ai layout prodotti
 
 Il layout prodotto potrebbe essere una versione definitiva, tuttavia, nella maggior parte dei casi è un punto di partenza, ogni modifica è possibile dal composer sbloccando i singoli oggetti e modificandoli opportunamente.
 L'elemento scala è numerico e ripetuto per ogni mappa, come il sottotitolo, questo perchè si possono adattare tutte le mappe singolarmante.
@@ -113,24 +114,26 @@ E' anche possibile applicare un atlante contemporaneamente su tutte o parte dell
 
 ↑[torna su](#multiple-map)↑
 
-#### Multimap da layer d'esempio
+## Esempi
+
+#### Multimap da layer
 
 ![uno](images/Esempio_Feature.PNG)
 
 ↑[torna su](#multiple-map)↑
 
-#### Multimap da elementi d'esempio
+#### Multimap da elementi
 
 ![uno](images/Esempio_Layer.PNG)
 
 ↑[torna su](#multiple-map)↑
 
-### Videotutorial
+## Videotutorial
 [![](https://img.youtube.com/vi/reoXJ7Pmk-I/0.jpg)](https:// "HML with CSS generator")
 
 ↑[torna su](#multiple-map)↑
 
-### Ringraziamenti
+## Ringraziamenti
 [QGIS.org](https://www.qgis.org/it/site/) - Tutti gli amici betatester
 
 
