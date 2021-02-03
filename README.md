@@ -8,7 +8,8 @@ Mappe multiple da elementi o layer su singolo layout
   - [QGIS Plugin per processing](#qgis-plugin-per-processing)
     - [Installazione](#installazione)
     - [Finestra processing](#finestra-processing)
-    - [Modifiche al layout prodotto](#modifiche-al-layout-prodotto)
+    - [MULTI MAP LAYOUT FROM LAYERS](#multi-map-layout-from-layers)
+    - [Modifiche ai layout prodotti](#modifiche-ai-layout-prodotti)
       - [Layout d'esempio](#layout-desempio)
     - [Videotutorial](#videotutorial)
     - [Ringraziamenti](#ringraziamenti)
@@ -24,9 +25,11 @@ Il plugin, una volta caricato, compare negli script di processing nella cartella
 
 ![uno](images/Processing.PNG)
 
-Il plugin permette la composizione di un layot di pagina HTML con i layer da una fonte tra quelle compatibili.
+Il plugin permette la composizione di un layout di pagina con i layer o gli elementi da una fonte tra quelle compatibili.
 
-![uno](images/Finestra_annotata.PNG)
+### MULTI MAP LAYOUT FROM LAYERS
+
+![uno](images/MMlayers_annotata.PNG)
 
 1. [opzionale]Titolo che compare in testata del layout;
 2. [opzionale]Sottotitolo;
@@ -64,7 +67,7 @@ NOTA BENE:
 
 ↑[torna su](#multiple-map)↑
 
-### Modifiche al layout prodotto
+### Modifiche ai layout prodotti
 
 Il layout prodotto potrebbe essere una versione definitiva, tuttavia, nella maggior parte dei casi è un punto di partenza, ogni modifica è possibile dal composer sbloccando i singoli oggetti e modificandoli opportunamente.
 L'elemento scala è numerico e ripetuto per ogni mappa, come il sottotitolo, questo perchè si possono adattare tutte le mappe singolarmante.
@@ -75,7 +78,7 @@ E' anche possibile applicare un atlante contemporaneamente su tutte o parte dell
 
 #### Layout d'esempio
 
-![uno](images/Esempio.PNG)
+![uno](images/Esempio_Layer.PNG)
 
 ↑[torna su](#multiple-map)↑
 
