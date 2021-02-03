@@ -115,7 +115,7 @@ E' anche possibile applicare un atlante contemporaneamente su tutte o parte dell
 
 #### Multimap da layer d'esempio
 
-![uno](images/Esempio_Layer.PNG)
+![uno](images/Esempio_Feature.PNG)
 
 ↑[torna su](#multiple-map)↑
 
