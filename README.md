@@ -21,10 +21,10 @@ Mappe multiple da elementi o layer su singolo layout
 
 ### Installazione
 Per installarlo basta che scarichiate lo zip del repo e da QGIS fate installa plugin da zip. 
-E' disponibile nel repository ufficiale di QGIS.
+A breve disponibile nel repository ufficiale di QGIS.
 
 ### Finestra processing
-Il plugin, una volta caricato, compare negli script di processing nella cartella HTML
+Il plugin, una volta caricato, compare negli script di processing nella cartella **Multi Maps**
 
 ![uno](images/Processing.PNG)
 
@@ -43,24 +43,23 @@ Il plugin permette la composizione di un layout di pagina con i layer o gli elem
 7. Numero di colonne;
 8. Scala;
 9. File in uscita.
+    
 
-NOTA BENE: 
+**NOTA BENE:** 
 
-* Ogni mappa avrà per titolo il nome dell'elemento corrispondente
+* Ogni mappa avrà per titolo il nome dell'elemento corrispondente.
 
-* Ogni mappa può avere un sottotitolo dato da un campo o una espressione
+* Ogni mappa può avere un sottotitolo dato da un campo o una espressione.
   
-* Le mappe inserite ereditano la stessa visibilità del progetto
+* Le mappe inserite ereditano la stessa visibilità del progetto.
 
-* Per poter utilizzare i filtri con `'Solo elementi selezionati'` è necessario prima impostare i filtri e solo dopo spuntare `'Solo elementi selezionati'`
+* Per poter utilizzare i filtri con `'Solo elementi selezionati'` è necessario prima impostare i filtri e solo dopo spuntare `'Solo elementi selezionati'`.
 
 * Il nome del layout prodotto sarà del tipo MultiFeat_Landscape_A + il formato o
  MultiFeat_Portrait_A + il formato. Ad esempio MultiFeat_Landscape_A3 se si è impostato come formato carta l'A3.
 
 `
 ↑[torna su](#multiple-map)↑
-
-
 
 ## MULTI MAP LAYOUT FROM LAYERS
 
@@ -76,34 +75,34 @@ NOTA BENE:
 8. Scala;
 9. File in uscita.
 
-NOTA BENE: 
+**NOTA BENE:** 
 
-* Ogni mappa avrà per titolo il nome del layer o dell'elemento corrispondente
+* Ogni mappa avrà per titolo il nome del layer o dell'elemento corrispondente.
 
-* Ogni mappa può avere un sottotitolo in comune con le altre
+* Ogni mappa può avere un sottotitolo in comune con le altre.
 
 * E' possibile inserire una espressione di aggregazione tipo:
 
  `format_number(aggregate(layer:='comuni',aggregate:='sum',expression:="shape_area")/1000,2) || ' Ha' `
 
-questo a condizione che le mappe rappresentate abbiano i campi richiesti
+questo a condizione che le mappe rappresentate abbiano i campi richiesti.
 
-* L'estensione può essere scelta tra quelle dei layer disponibili, utilizzare quella della vista in essere o tracciata sul canvas
+* L'estensione può essere scelta tra quelle dei layer disponibili, utilizzare quella della vista in essere o tracciata sul canvas.
 
-* I campi selezionati possono essere riordinati a piacimento
+* I campi selezionati possono essere riordinati a piacimento.
 
-* E' possibile scegliere formato carta ed orientamento
+* E' possibile scegliere formato carta ed orientamento.
 
-* E' possibile salvare uno qualsiasi dei formati grafici previsti
+* E' possibile salvare uno qualsiasi dei formati grafici previsti.
 
-* Con layer con nomi duplicati la composizione potrebbe non riuscire, tipico caso layer memorizzati in gpgk provenienti da risultati processing
+* Con layer con nomi duplicati la composizione potrebbe non riuscire, tipico caso layer memorizzati in gpgk provenienti da risultati processing.
 
-* **TUTTI I LAYER DEVONO AVERE LO STESSO SR** dato che per costruzione devono risultare sovrapposti
+* **TUTTI I LAYER DEVONO AVERE LO STESSO SR** dato che per costruzione devono risultare sovrapposti.
   
-* Geometrie errate possono dare luogo a errori
+* Geometrie errate possono dare luogo a errori.
 
 * Il nome del layout prodotto sarà del tipo MultiMap_Landscape_A + il formato o
- MultiMAp_Portrait_A + il formato. Ad esempio MultiMap_Landscape_A3 se si è impostato come formato carta l'A3
+ MultiMAp_Portrait_A + il formato. Ad esempio MultiMap_Landscape_A3 se si è impostato come formato carta l'A3.
 
 ↑[torna su](#multiple-map)↑
 
