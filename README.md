@@ -8,9 +8,11 @@ Mappe multiple da elementi o layer su singolo layout
   - [QGIS Plugin per processing](#qgis-plugin-per-processing)
     - [Installazione](#installazione)
     - [Finestra processing](#finestra-processing)
+    - [MULTI MAP LAYOUT FROM FEATURES](#multi-map-layout-from-features)
     - [MULTI MAP LAYOUT FROM LAYERS](#multi-map-layout-from-layers)
     - [Modifiche ai layout prodotti](#modifiche-ai-layout-prodotti)
-      - [Layout d'esempio](#layout-desempio)
+      - [Multimap da layer d'esempio](#multimap-da-layer-desempio)
+      - [Multimap da elementi d'esempio](#multimap-da-elementi-desempio)
     - [Videotutorial](#videotutorial)
     - [Ringraziamenti](#ringraziamenti)
 
@@ -26,6 +28,37 @@ Il plugin, una volta caricato, compare negli script di processing nella cartella
 ![uno](images/Processing.PNG)
 
 Il plugin permette la composizione di un layout di pagina con i layer o gli elementi da una fonte tra quelle compatibili.
+
+### MULTI MAP LAYOUT FROM FEATURES
+
+![uno](images/MMfeatures_annotata.PNG)
+
+1. Layer origine dati;
+2. Filtro o ordinamento;
+3. [opzionale] Titolo che compare in testa al layout;
+4. [opzionale] Sottotitolo o espressione filtro;
+5. Formato carta;
+6. Orientamento carta;
+7. Numero di colonne;
+8. Scala;
+9. File in uscita.
+
+NOTA BENE: 
+
+* Ogni mappa avrà per titolo il nome dell'elemento corrispondente
+
+* Ogni mappa può avere un sottotitolo dato da un campo o una espressione
+  
+* Le mappe inserite ereditano la stessa visibilità del progetto
+  
+NOTA BENE:
+
+ per poter utilizzare i filtri con `'Solo elementi selezionati'` è necessario prima impostare i filtri e solo dopo spuntare `'Solo elementi selezionati'`
+
+`
+↑[torna su](#multiple-map)↑
+
+
 
 ### MULTI MAP LAYOUT FROM LAYERS
 
@@ -43,7 +76,7 @@ Il plugin permette la composizione di un layout di pagina con i layer o gli elem
 
 NOTA BENE: 
 
-* Ogni mappa avrà per titolo il nome del layer corrispondente.
+* Ogni mappa avrà per titolo il nome del layer o dell'elemento corrispondente.
 
 * Ogni mappa può avere un sottotitolo in comune con le altre
 
@@ -51,7 +84,7 @@ NOTA BENE:
 
  `format_number(aggregate(layer:='comuni',aggregate:='sum',expression:="shape_area")/1000,2) || ' Ha' `
 
-* questo a condizione che le mappe rappresentate abbiano i campi richiesti.
+questo a condizione che le mappe rappresentate abbiano i campi richiesti.
 
 * L'estensione può essere scelta tra quelle dei layer disponibili, utilizzare quella della vista in essere o tracciata sul canvas.
 
@@ -63,7 +96,11 @@ NOTA BENE:
 
 * Con layer con nomi duplicati la composizione potrebbe non riuscire, tipico caso layer memorizzati in gpgk provenienti da risultati processing.
 
-* **TUTTI I LAYER DEVONO AVERE LO STESSO SR** dato che per costruzione devono risultare sovrapposti_
+* **TUTTI I LAYER DEVONO AVERE LO STESSO SR** dato che per costruzione devono risultare sovrapposti
+  
+* E' possibile applicare un atlante a tutte le mappe o a parte di esse
+
+
 
 ↑[torna su](#multiple-map)↑
 
@@ -76,7 +113,13 @@ E' anche possibile applicare un atlante contemporaneamente su tutte o parte dell
 
 ↑[torna su](#multiple-map)↑
 
-#### Layout d'esempio
+#### Multimap da layer d'esempio
+
+![uno](images/Esempio_Layer.PNG)
+
+↑[torna su](#multiple-map)↑
+
+#### Multimap da elementi d'esempio
 
 ![uno](images/Esempio_Layer.PNG)
 
