@@ -101,6 +101,8 @@ questo a condizione che le mappe rappresentate abbiano i campi richiesti.
 * **TUTTI I LAYER DEVONO AVERE LO STESSO SR** dato che per costruzione devono risultare sovrapposti.
   
 * Geometrie errate possono dare luogo a errori.
+  
+* **PER GEOMETRIE PUNTUALI,  per ora, occorre fare un buffer della dimensione voluta e indicare quello come sorgente.**
 
 * Il nome del layout prodotto sarà del tipo MultiMap_Landscape_A + il formato o
  MultiMAp_Portrait_A + il formato. Ad esempio MultiMap_Landscape_A3 se si è impostato come formato carta l'A3.
