@@ -7,7 +7,7 @@ name=Multi Maps
 qgisMinimumVersion=3.6
 description=This plugin compose various multiple map on single layout
 version=1.0
-author=giulio.fattori
+author=Giulio Fattori
 email=giulio.fattori@tin.it
 
 about=Two algorithm plugins that make up layouts with multiple maps: by layers or by features
