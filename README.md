@@ -84,7 +84,7 @@ Il plugin permette la composizione di un layout di pagina con i layer o gli elem
 
 * E' possibile inserire una espressione di aggregazione tipo:
 
- `format_number(aggregate(layer:='comuni',aggregate:='sum',expression:="shape_area")/10000,2) || ' Ha' `
+ `format_number(aggregate(layer:='comuni',aggregate:='sum',expression:="shape_area")/10000,2) || ' ha' `
 
 questo a condizione che le mappe rappresentate abbiano i campi richiesti.
 
