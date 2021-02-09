@@ -40,6 +40,7 @@ from qgis.core import (Qgis,
                        #QgsWkbTypes,
                        QgsApplication,
                        QgsExpression,
+                       QgsExpressionContext,
                        QgsProject,
                        QgsPrintLayout,
                        QgsLayoutPoint,
@@ -471,13 +472,14 @@ class MultiFeatLayoutAlgorithm(QgsProcessingAlgorithm):
             title.setLocked(True)
             
             #Aggiunge il sottitolo alla mappa
-            if sottotitolo:
-                sub_title = sottotitolo
-                if '"' in sub_title:
-                    sub_title = sottotitolo.split('"')[1].split('"')[0]
-                                    
+            if sottotitolo:                      
                 title = QgsLayoutItemLabel(layout)
-                title.setText(str(feat_sel[sub_title]))
+                
+                exp = QgsExpression(sottotitolo)
+                context = QgsExpressionContext()
+                context.setFeature(feat_sel)
+                title.setText(str(exp.evaluate(context)))
+            
                 title.setFont(QFont("Arial", 10))
                 title.adjustSizeToText()
                 title.attemptMove(QgsLayoutPoint(bordo+xm*c, bordo+ 5 +ym*r, QgsUnitTypes.LayoutMillimeters))
