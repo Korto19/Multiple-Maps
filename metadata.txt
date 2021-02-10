@@ -22,7 +22,7 @@ repository=https://github.com/Korto19/Multiple-Maps
 
 hasProcessingProvider=yes
 # Uncomment the following line and add your changelog:
-# changelog=09.02.2021 - fix espression in MML from features
+changelog=09.02.2021 - fix espression in MML from features
 
 # Tags are comma separated with spaces allowed
 tags=python, plugin, map, layout, composer, multiple
